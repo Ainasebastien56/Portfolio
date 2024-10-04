@@ -7,7 +7,7 @@
     </div>
     <button class=" block md:hidden bg-blue-600 text-white rounded w-32 mt-20 py-2 transform hover:-translate-y-1 hover:scale-110 hover:ring-2 ring-blue shadow-lg transition-all duration 500 ease-in-out">Let's start<font-awesome-icon class="ml-2" icon="arrow-right"/> </button>
     <div class="absolute left-0  transform top-20 -translate-y-auto md:top-1/2 lg:top-1/2  md:-translate-y-1/2 lg:-translate-y-1/2 text-justify w-full h-auto md:w-2/5 text-black z-10  flex flex-col items-center justify-center text-justify px-5 md:pl-10 md:pr-20">
-        <h1 class="text-3xl md:text-5xl lg:text-5xl md:text-white font-bold mb-5 ">Web Developer</h1>
+        <h1 class="text-3xl md:text-5xl lg:text-5xl font-bold mb-5 ">Web Developer</h1>
       <p class="mb-5 font-semibold text-md md:text-lg lg:text-lg text-gray-600">I'm a web developper specializing in responsive and intuitive front-end
         experiences. While I focus on front-end technologies, I also have some experience
         with back-end to support full-stack collaboration.
