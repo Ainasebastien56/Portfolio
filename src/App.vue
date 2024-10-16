@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-hidden">
-    <nav :class="isScroll?'bg-black bg-opacity-80': 'background'" class="fixed top-0 left-0 w-full z-50 flex flex-col md:flex-row justify-between items-center px-5 md:px-20 py-2">
+    <nav :class="isScroll?'text-black bg-opacity-60 bg-white ': 'text-white'" class="fixed z-30 top-0 left-0 w-full  flex flex-col md:flex-row justify-between items-center px-5 md:px-20 py-2">
       <div class="w-full flex items-center justify-between">
             <div>
             <img class="w-10 " src="@/assets/logo.png" alt="logo">
@@ -8,8 +8,8 @@
 
           <div class="md:hidden">
             <button  @click="isOpen= !isOpen">
-              <font-awesome-icon  v-if="!isOpen" class="text-white text-2xl transition-all duration 500 ease-in-out" icon="bars"/>
-              <font-awesome-icon  v-if="isOpen"  class="text-white text-2xl transition-all duration 500 ease-in-out" icon="xmark"/>
+              <font-awesome-icon  v-if="!isOpen"  class=" text-2xl transition-all duration 500 ease-in-out" icon="bars"/>
+              <font-awesome-icon  v-if="isOpen"  class=" text-2xl transition-all duration 500 ease-in-out" icon="xmark"/>
             </button>
            
           </div>
@@ -19,13 +19,23 @@
           <a  @click="setActive('home')" :class="activeItem === 'home'? 'text-gray-900 md:text-white underline transition-all duration 500 ease-in-out':''" class="mx-2  text-gray-500  mb-2 md:mb-0" href="#home">Home</a>
           <a @click="setActive('portfolio')" :class="activeItem === 'portfolio'? 'text-gray-900 md:text-white underline transition-all duration 500 ease-in-out':''" class="mx-2 text-gray-500 mb-2 md:mb-0 " href="#portfolio">Portfolio</a>
           <a @click="setActive('about')" :class="activeItem === 'about'? 'text-gray-900 md:text-white underline transition-all duration 500 ease-in-out':''" class="mx-2 text-gray-500 mb-2 md:mb-0" href="#about">About Me</a>
+          <a @click="setActive('skill')" :class="activeItem === 'skill'? 'text-gray-900 md:text-white underline transition-all duration 500 ease-in-out':''" class="mx-2 text-gray-500 mb-2 md:mb-0" href="#skills">Skills</a>
         </div>
     </nav>
   <div id="home">
     <HomeView/>
   </div>
+
+  <div id="">
+    <MyService/>
+  </div>
+
   <div id="about">
     <AboutView/>
+  </div>
+
+  <div id="portfolio" class="mb-10">
+    <MyPortfolio/>
   </div>
   </div>
    
@@ -35,11 +45,17 @@
 
 import AboutView from './views/AboutView.vue';
 import HomeView from './views/HomeView.vue';
+import MyService from './views/MyService.vue';
+import MyPortfolio from './views/MyPortfolio.vue';
+
+
 
   export default{
     components:{
       HomeView,
-      AboutView
+      AboutView,
+      MyService,
+      MyPortfolio
     },
     data(){
     
@@ -70,6 +86,7 @@ methods:{
 </script>
 
 <style scoped>
+  
   .background{
     background-color: #E3E3E3;
   }

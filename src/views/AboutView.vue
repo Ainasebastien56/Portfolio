@@ -1,31 +1,31 @@
 <template>
-  <div class="about text-black px-5 md:px-10 py-2 flex flex-col items-center bg-black my-10 md:my-0">
+  <div class="about text-black px-5 md:px-10 py-10 flex flex-col items-center bg-black md:my-0">
       <div class=" w-full relative">
-          <h2 class="w-full title md:mobile-title font-semibold bg-gradient-to-b from-white to-white/25 bg-clip-text text-transparent tracking-widest text-center leading-none mb-5 md:mb-0">ABOUT ME </h2>
+          <h2 class="w-full  text-7xl md:text-8xl font-semibold bg-gradient-to-b from-white to-white/25 bg-clip-text text-transparent tracking-widest text-center leading-none mb-5 md:mb-0">ABOUT ME </h2>
         
       </div>
 
-      <div class="w-full flex flex-col md:flex-row justify-between">
-          <div class="image w-full md:w-2/5 flex items-center justify-center px-5">
-            <img class="w-full  shadow-lg" src="@/assets/images/aina.jpg" alt="">
+      <div class="w-full h-full flex flex-col md:flex-row justify-between py-10">
+          <div class="image w-full h-full  md:w-2/5 flex px-5">
+            <img class="w-full  flex-shrink shadow-lg rounded" src="@/assets/images/aina.jpg" alt="">
           </div>
 
-          <div class="section w-full md:w-3/5 text-white flex flex-col px-5  py-10 md:py-0">
-              <div class="navigation text-md md:text-lg mb-10 w-full  justify-center md:justify-start  items-center space-x-5 md:space-x-20 border-b-2 border-white py-5 ">
+          <div class="section w-full h-full md:w-3/5 text-white flex flex-col px-5  py-10 md:py-0">
+              <div class="navigation text-md md:text-lg mb-10 w-full  justify-center md:justify-start  items-center space-x-5 md:space-x-20 border-b-2 border-white  pb-5 ">
                   <a @click="setActive('story')" :class="isActive ==='story'?'text-white':''" class="text-gray-600 transition-all transition-500 ease-in-out border-0">MY STORY</a>
                   <a @click="setActive('experience')" :class="isActive ==='experience'?'text-white':''" class="text-gray-600 transition-all transition-500 ease-in-out border-0">EXPERIENCE</a>
                   <a @click="setActive('education')" :class="isActive ==='education'?'text-white':''" class="text-gray-600 transition-all transition-500 ease-in-out border-0">EDUCATION</a>
               </div>
  
               <div class="text-justify text-gray-200 ">
-                  <div class="leading-relaxed text-md md:text-lg" v-show="isActive === 'story'" :class="isActive?'section':''">
-                    <p class="mb-5">Hello! I'm <span class="font-bold">Aina Lovasoa Sébastien RANDRIAMANANA,</span>
+                  <div class="leading-normal text-md md:text-lg" v-show="isActive === 'story'" :class="isActive?'section':''">
+                    <p class="mb-5">I'm <span class="font-bold">Sébastien,</span>
                       a passionate web developer with a deep love for creating dynamic and engaging
                       applications. My journey in technology began with fascination for coding, and i have since
                       specialized in JavaScript frameworks like <span class=" font-semibold italic">Angular, React and Vue.js</span>
                     </p>
                     <p class="mb-5">
-                      I thrive on learning new technologies and embrace my natural curiosity. While I consider
+                      While I consider
                       myself an expert in front-end development, i am also adaptable and capable of working
                       in a Full Stack environment.
                     </p>
@@ -55,9 +55,15 @@
                   </div>
 
                   <div v-show="isActive === 'education'" :class="isActive?'section':''">
-                    <h2>education</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, earum assumenda eum modi repellendus accusamus at numquam suscipit blanditiis fugiat tenetur praesentium, quis, temporibus cum eius quas tempore. Modi, incidunt.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex quidem illo, tenetur optio qui asperiores tempora perferendis eligendi quaerat natus, dolores voluptates. Esse a, obcaecati similique dolorum iure qui.</p>
+                    <div class="mb-10">
+                      <h2 class="text-lg md:text-xl font-semibold" >• Currently pursuing a Master's degree (Year 2) in Electronics, Computer Systems, and Artifical Intelligence</h2>
+                      <h3 class="text-md"> Institut Supérieur Polytechnique de Madagascar (I.S.P.M) | 2023 - 2024</h3>
+                    </div>
+
+                    <div >
+                      <h2 class="text-lg md:text-xl font-semibold" >• Bachelor's degree in Electronics, Computer Systems, and Artifical Intelligence</h2>
+                      <h3 class=""> Institut Supérieur Polytechnique de Madagascar (I.S.P.M) | 2022 - 2023</h3>
+                    </div>           
                   </div>
               </div>
           </div>
@@ -107,6 +113,17 @@
     transform: translateX(0);
     opacity:1;
   }
+}
+
+.reveal{
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.reveal-visible{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
 }
 
 </style>

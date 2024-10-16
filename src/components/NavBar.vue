@@ -1,5 +1,5 @@
 <template>
-    <nav :class="isScroll?'bg-black bg-opacity-80': 'background'" class="fixed top-0 left-0 w-full z-50 flex flex-col md:flex-row justify-between items-center px-5 md:px-20 py-2">
+    <nav :class="isScroll?'bg-white text-white': 'bg-black'" class="fixed top-0 left-0 w-full z-50 flex flex-col md:flex-row justify-between items-center px-5 md:px-20 py-2">
       <div class="w-full flex items-center justify-between">
             <div>
             <img class="w-10 " src="@/assets/logo.png" alt="logo">
@@ -57,7 +57,5 @@
 </script>
 
 <style>
-  .background{
-    background-color: #E3E3E3;
-  }
+
 </style>
