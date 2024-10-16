@@ -19,7 +19,7 @@
           <a  @click="setActive('home')" :class="activeItem === 'home'? 'text-gray-900 md:text-white underline transition-all duration 500 ease-in-out':''" class="mx-2  text-gray-500  mb-2 md:mb-0" href="#home">Home</a>
           <a @click="setActive('portfolio')" :class="activeItem === 'portfolio'? 'text-gray-900 md:text-white underline transition-all duration 500 ease-in-out':''" class="mx-2 text-gray-500 mb-2 md:mb-0 " href="#portfolio">Portfolio</a>
           <a @click="setActive('about')" :class="activeItem === 'about'? 'text-gray-900 md:text-white underline transition-all duration 500 ease-in-out':''" class="mx-2 text-gray-500 mb-2 md:mb-0" href="#about">About Me</a>
-          <a @click="setActive('skill')" :class="activeItem === 'skill'? 'text-gray-900 md:text-white underline transition-all duration 500 ease-in-out':''" class="mx-2 text-gray-500 mb-2 md:mb-0" href="#skills">Skills</a>
+          <a @click="setActive('skills')" :class="activeItem === 'skills'? 'text-gray-900 md:text-white underline transition-all duration 500 ease-in-out':''" class="mx-2 text-gray-500 mb-2 md:mb-0" href="#skills">Skills</a>
         </div>
     </nav>
   <div id="home">
@@ -38,6 +38,10 @@
     <MyPortfolio/>
   </div>
 
+  <div id="skills" class="">
+    <MySkills/>
+  </div>
+
   <div class="">
     <MyFooter/>
   </div>
@@ -52,7 +56,7 @@ import HomeView from './views/HomeView.vue';
 import MyService from './views/MyService.vue';
 import MyPortfolio from './views/MyPortfolio.vue';
 import MyFooter from './components/MyFooter.vue';
-
+import MySkills from './components/MySkills.vue';
 
 
   export default{
@@ -61,6 +65,7 @@ import MyFooter from './components/MyFooter.vue';
       AboutView,
       MyService,
       MyPortfolio,
+      MySkills,
       MyFooter
     },
     data(){

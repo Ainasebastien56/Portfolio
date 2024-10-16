@@ -19,11 +19,11 @@
                    <div class="w-11/12 flex flex-col">
                         <h3 class="font-semibold font-sans text-2xl text-white">{{picture.title}}</h3>
                         <span class="mt-2 mb-5 h-0.5 w-10 bg-white"></span>
-                        <h5 class="text-lg italic">{{ picture.tech }}</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis error est accusantium, beatae autem tempora esse velit debitis molestiae voluptas nobis sapiente reprehenderit explicabo delectus? Incidunt odit fugiat omnis quo.</p>
+                        <h5 class="text-xl italic">{{ picture.tech }}</h5>
+                        <p>{{ picture.description }}</p>
                         <p class="flex space-x-5 text-2xl mt-5">
-                            <font-awesome-icon  icon="globe"/>
-                            <font-awesome-icon :icon="['fab','github']"/>
+                            <a :href="picture.linkDep" target="_blank" ><font-awesome-icon  icon="globe"/></a>
+                            <a :href="picture.linkGit" target="_blank"><font-awesome-icon :icon="['fab','github']"/></a>
                         </p>
                    </div>
                 
@@ -33,8 +33,6 @@
         </swiper>
     </div>
        
-        
-   
 </template>
 
 <script>
@@ -63,9 +61,25 @@
         data(){
             return{
                 pictures:[
-                    {src:image1, alt:'angular', title:'MyPortfolio', bg:'bg-red-500',tech:'VueJs + Tailwind css'},
-                    {src:image2, alt:'node', title:'FreeImage', bg:'bg-green-600',tech:'Angular + Tailwind css + Rest API'},
-                    {src:image3, alt:'react', title:'WeatherApp', bg:'bg-gray-800',tech:'VueJs + Tailwind css + Rest API'},
+                    {src:image1, alt:'angular', title:'MyPortfolio', bg:'bg-red-500',
+                    tech:'VueJs + Tailwind css',linkDep:'https://aina-sebastien.vercel.app/#portfolio',
+                     linkGit:'https://github.com/Ainasebastien56/Portfolio.git',
+                      description:'An interactive and responsive website designed to showcase my skills and experiences, featuring smooth navigation and unique 3D animations.'
+                    },
+                   
+                   
+                    {src:image2, alt:'node', title:'FreeImage', bg:'bg-green-600',
+                    tech:'Angular + Tailwind css + Rest API',linkDep:'https://free-image.vercel.app/',
+                    linkGit:'https://github.com/Ainasebastien56/free-image.git',
+                    description:'A web application that allows users to search and download high-quality images, integrated with the Pixabay API to provide a wide range of free visual content.'
+                   
+
+                    },
+                    {src:image3, alt:'react', title:'WeatherApp', bg:'bg-gray-800',
+                    tech:'VueJs + Tailwind css + Rest API', linkDep:'https://weather-seven-liart.vercel.app/home',
+                    linkGit:'https://github.com/Ainasebastien56/Weather.git',
+                    description:'A tool that displays weather forecasts for different countries, offering detailed multi-day predictions, integrated with WeatherAPI and OpenWeatherMap'
+                    },
                     
                 ],
                 modules:[Navigation, Pagination, EffectCube]

@@ -1,44 +1,72 @@
 <template>
-    <div class="py-10 bg-black text-white  px-5 md:px-10 py-2">
+    <div class="py-10 flex flex-col items-center justify-center bg-purple-700  text-white  px-5 md:px-10 py-2">
+        <div class="w-full flex items-center justify-center">
+            <h1 class="text-7xl md:text-8xl font-semibold bg-gradient-to-b from-white to-white/25 bg-clip-text text-transparent tracking-widest text-center mb-5">MY SKILLS</h1>
+        </div>
+       <div class=" w-10/12 flex flex-col justify-center">
+            <h3 class="w-10/12 text-xl font-semibold">Langage & Framework</h3>
+            <div class="grid  justify-items-center grid-cols-3 gap-5  py-10">
+                <div  v-for="tech in technologies" :key="tech.id" class="flex flex-col items-center">
+                    <img class="w-12 h-12 text-white" :src="tech.src" alt="image">
+                    <p>{{ tech.name }}</p>
+                </div>
+                
+            </div>
+       </div> 
 
-        <div class="w-full  flex flex-col  items-center ">
-            <h1 class=" title font-semibold bg-gradient-to-b from-white to-white/25 bg-clip-text text-transparent tracking-widest text-center leading-none mb-5">SKILLS</h1>
-            <div class="w-full flex flex-row items-center justify-center ">
-                <div class="  h-auto mx-5 image " v-for="image in images" :key="image.id">
-                <img  class="w-full h-full " :src="image.src" alt="logo"/>
+       <div class=" w-10/12 flex flex-col  justify-center mt-5">
+            <h3 class=" w-10/12 text-xl font-semibold">Tools</h3>
+            <div class="grid  justify-items-center grid-cols-3 gap-4  py-10">
+                <div v-for="tool in tools" :key="tool.id" class="flex flex-col items-center">
+                    <img class="w-12 h-12 text-white" :src="tool.src" alt="image">
+                    <p>{{ tool.name }}</p>
+                </div>
+                
             </div>
-            </div>
-            
-         </div>
+       </div> 
        
     </div>
 </template>
 
 <script>
-import image1 from '@/assets/images/angular.svg';
-import image2 from  '@/assets/images/git.svg';
-import image3 from '@/assets/images/github.svg';
-import image4 from '@/assets/images/Javascript.svg';
-import image5 from '@/assets/images/nodejs.svg';
-import image6 from '@/assets/images/react.svg';
-import image7 from '@/assets/images/typescript.png';
-import image8 from '@/assets/images/vuejs.svg';
+import angular from '@/assets/svg/angular.svg';
+import git from  '@/assets/images/git.svg';
+import github from '@/assets/images/github.svg';
+import javascript from '@/assets/svg/javascript.svg';
+import nodejs from '@/assets/svg/nodejs.svg';
+import react from '@/assets/svg/react-js.svg';
+import vuejs from '@/assets/svg/vuejs.svg';
+import typescript from '@/assets/svg/typescript.svg';
+import tailwind from '@/assets/svg/tailwind.svg';
+import css from '@/assets/svg/css.svg';
+import html from '@/assets/svg/html5.svg';
+import figma from '@/assets/svg/figma.svg';
+import express from '@/assets/svg/express.svg';
+import spring from '@/assets/svg/spring-boot.svg'
 
     export default{
         name:'MySkills',
 
        data(){
         return{
-            images:[
-            {id:1, src:image1},
-            {id:2, src:image2},
-            {id:3, src:image3},
-            {id:4, src:image4},
-            {id:5, src:image5},
-            {id:6, src:image6},
-            {id:7, src:image7},
-            {id:8, src:image8},
-           
+            technologies:[
+            {id:1, src:angular, name:'Angular'},
+            {id:2, src:javascript, name:'JavaScript'},
+            {id:3, src:react, name:'React'},
+            {id:4, src:vuejs, name:'Vue.js'},
+            {id:5, src:typescript, name:'TypeScript'},
+            {id:6, src:tailwind, name:'Tailwindcss'},
+            {id:7, src:css, name:'CSS'},
+            {id:8, src:html, name:'HTML'},
+            {id:9, src:express, name:'Express.js'},
+            {id:10, src:spring, name:'SpringBoot'},
+            {id:11, src:nodejs, name:'Node.js'},
+
+            ],
+            tools:[
+            {id:1, src:git, name:'Git'},
+            {id:2, src:github, name:'GitHub'},
+            {id:3, src:figma, name:'Figma'}
             ]
         }
        },
@@ -49,29 +77,4 @@ import image8 from '@/assets/images/vuejs.svg';
 </script>
 
 <style scoped>
-
-.title{
-    font-size: 100px;
-}
-.image{
-    font-size: 50px;
-    transition:.5s;
-    animation: slideDown 3s infinite;
-
-}
-
-@keyframes slideDown{
-    0%{
-        transform: translateX(100%);
-        opacity:0;
-    }
-    50%{
-        transform: translateX(0);
-        opacity:1;
-    }
-    100%{
-        transform:translateX(-100%);
-        opacity:0;
-    }
-}
 </style>
