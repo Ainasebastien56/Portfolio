@@ -12,12 +12,13 @@
             
         >
             <swiper-slide v-for="picture in pictures" :key="picture.alt">
-                <div :class="picture.bg" class="w-full flex flex-col items-center justify-center text-white pb-20 pt-5 rounded-lg">
+                <div :class="picture.bg" class="w-full flex flex-col items-center justify-center text-white text-justify pb-20 pt-5 rounded-lg">
                    <div  class="w-11/12 mb-5 rounded-xl">
                         <img :src="picture.src" alt="image"  @click="showMessage()" class="w-full h-60 md:h-96 rounded">
                    </div>
                    <div class="w-11/12 flex flex-col">
                         <h3 class="font-semibold font-sans text-2xl text-white">{{picture.title}}</h3>
+                        <span class="mt-2 mb-5 h-0.5 w-10 bg-white"></span>
                         <h5 class="text-lg italic">{{ picture.tech }}</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis error est accusantium, beatae autem tempora esse velit debitis molestiae voluptas nobis sapiente reprehenderit explicabo delectus? Incidunt odit fugiat omnis quo.</p>
                         <p class="flex space-x-5 text-2xl mt-5">

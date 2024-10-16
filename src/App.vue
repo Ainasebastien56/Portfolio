@@ -37,6 +37,10 @@
   <div id="portfolio" class="mb-10">
     <MyPortfolio/>
   </div>
+
+  <div class="">
+    <MyFooter/>
+  </div>
   </div>
    
 </template>
@@ -47,6 +51,7 @@ import AboutView from './views/AboutView.vue';
 import HomeView from './views/HomeView.vue';
 import MyService from './views/MyService.vue';
 import MyPortfolio from './views/MyPortfolio.vue';
+import MyFooter from './components/MyFooter.vue';
 
 
 
@@ -55,7 +60,8 @@ import MyPortfolio from './views/MyPortfolio.vue';
       HomeView,
       AboutView,
       MyService,
-      MyPortfolio
+      MyPortfolio,
+      MyFooter
     },
     data(){
     
