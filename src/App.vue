@@ -26,16 +26,16 @@
     <HomeView/>
   </div>
 
+  <div id="portfolio" class="mb-10">
+    <MyPortfolio/>
+  </div>
+
   <div id="">
     <MyService/>
   </div>
 
   <div id="about">
     <AboutView/>
-  </div>
-
-  <div id="portfolio" class="mb-10">
-    <MyPortfolio/>
   </div>
 
   <div id="skills" class="">

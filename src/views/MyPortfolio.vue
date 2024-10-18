@@ -76,7 +76,7 @@
 
                     },
                     {src:image3, alt:'react', title:'WeatherApp', bg:'bg-gray-800',
-                    tech:'VueJs + Tailwind css + Rest API', linkDep:'https://weather-seven-liart.vercel.app/home',
+                    tech:'Angular + Tailwind css + Rest API', linkDep:'https://weather-seven-liart.vercel.app/home',
                     linkGit:'https://github.com/Ainasebastien56/Weather.git',
                     description:'A tool that displays weather forecasts for different countries, offering detailed multi-day predictions, integrated with WeatherAPI and OpenWeatherMap'
                     },

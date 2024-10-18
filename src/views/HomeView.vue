@@ -5,7 +5,6 @@
       </iframe>
       <p  class="bg-black absolute bottom-0  right-0 w-40 rounded py-10 "></p>
     </div>
-      <button class="text-white absolute -bottom-8 px-3 py-6 border-2 border-white border-solid  rounded-full shadow-lg   hover:scale-110 hover:bg-white hover:text-black transition duration-50"><a href="#about"><font-awesome-icon class="text-3xl" icon="arrow-alt-circle-down"/></a></button>
     </div>
 
 </template>

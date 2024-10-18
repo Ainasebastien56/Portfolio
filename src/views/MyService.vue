@@ -6,7 +6,7 @@
         </div>
 
         <div class="w-full flex flex-wrap items-center justify-between space-y-5 px-5 ">
-            <div class="rounded w-full sm:w-4/6 md:w-80 h-80 flex flex-col bg-white text-justify p-5 shadow-lg hover:scale-110">
+            <div class="rounded w-full sm:w-4/6 md:w-80 h-80 flex flex-col bg-white bg-opacity-80 text-justify p-5 shadow-lg hover:scale-110">
             <div>
                 <font-awesome-icon icon="code" class="bg-yellow-600 text-white p-2" />
             </div>
@@ -25,7 +25,7 @@
                 </p>
             </div>
         </div>
-        <div class="rounded w-full sm:w-4/6 md:w-80 h-80 flex flex-col bg-white text-justify p-5 shadow-lg hover:scale-110">
+        <div class="rounded w-full sm:w-4/6 md:w-80 h-80 flex flex-col bg-white bg-opacity-80 text-justify p-5 shadow-lg hover:scale-110">
                 <div>
                     <font-awesome-icon icon="server" class="bg-yellow-300 text-white p-2" />
                 </div>
@@ -43,7 +43,7 @@
                 </div>
         </div>
 
-        <div class="rounded w-full sm:w-4/6 md:w-80 h-80 flex flex-col bg-white text-justify p-5 shadow-lg hover:scale-110">
+        <div class="rounded w-full sm:w-4/6 md:w-80 h-80 flex flex-col bg-white bg-opacity-80 text-justify p-5 shadow-lg hover:scale-110">
             <div>
                 <font-awesome-icon icon="th" class="bg-purple-600 text-white p-2" />
             </div>
@@ -62,7 +62,7 @@
             </div>
         </div>
         
-        <div class="rounded  w-full sm:w-4/6 md:w-80 h-80  flex flex-col bg-white text-justify p-5 shadow-lg hover:scale-110">
+        <div class="rounded  w-full sm:w-4/6 md:w-80 h-80  flex flex-col bg-white bg-opacity-80 text-justify p-5 shadow-lg hover:scale-110">
             <div>
                 <font-awesome-icon icon="cloud" class="bg-red-500 text-white p-2" />
             </div>
