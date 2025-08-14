@@ -12,7 +12,8 @@
             </div>
             <div>
                 <h3 class="font-semibold text-lg">Front-End Development</h3>
-                <p class="text-sm">I create modern, interactive, and high-performance 
+                <p class="text-sm text-justify">
+                    I create modern, interactive, and high-performance 
                     user interfaces using technologies such as <span class="font-semibold">Angular</span>,
                     <span class="font-semibold">React</span>, <span class="font-semibold">Vue.js</span>
                     
@@ -31,11 +32,9 @@
                 </div>
                 <div>
                     <h3 class="font-semibold text-lg">UI/UX & Interactive Components</h3>
-                    <p class="text-sm">
+                    <p class="text-sm text-justify">
                         I implement interactive components and animations 
                         to enhance user engagement and usability.
-                        Technologies: Angular Animations, CSS transitions, 
-                        JavaScript/TypeScript
                     </p>
                     <p class="mt-5">
                     <span class="font-semibold ">Technologies:</span>
@@ -50,7 +49,7 @@
             </div>
             <div>
                 <h3 class="font-semibold text-lg">Responsice Design</h3>
-                <p class="text-sm">
+                <p class="text-sm text-justify">
                     I develop interfaces that adapt perfectly to all
                     device types (desktop, tablets, mobile phones). I use 
                     responsive design techniques and modern frameworks to ensure
@@ -69,7 +68,7 @@
             </div>
             <div>
                 <h3 class="font-semibold text-lg">API Integration (Front-End)</h3>
-                <p class="text-sm">
+                <p class="text-sm text-justify">
                     I integrate and consume RESTful APIs efficiently
                      to fetch and display data on the client-side, 
                      ensuring smooth interactions and responsive applications.
