@@ -14,7 +14,7 @@
             <swiper-slide v-for="picture in pictures" :key="picture.alt">
                 <div :class="picture.bg" class="w-full flex flex-col items-center justify-center text-white text-justify pb-20 pt-5 rounded-lg">
                    <div  class="w-11/12 mb-5 rounded-xl">
-                        <img :src="picture.src" alt="image"  @click="showMessage()" class="w-full h-60 md:h-96 rounded">
+                        <img :src="picture.src" alt="image"  @click="showMessage()" class="w-full object-cover h-60 md:h-96 rounded">
                    </div>
                    <div class="w-11/12 flex flex-col">
                         <h3 class="font-semibold font-sans text-2xl text-white">{{picture.title}}</h3>
@@ -48,6 +48,7 @@
     import image1 from '@/assets/images/portfolio.png'
     import image2 from '@/assets/images/free-image.png'
     import image3 from '@/assets/images/weather.png'
+    import image4 from '@/assets/images/food-blog.png'
    
   
 
@@ -61,6 +62,11 @@
         data(){
             return{
                 pictures:[
+                     {src:image4, alt:'angular', title:'Food-Blog', bg:'bg-stone-800',
+                    tech:'Angular + Tailwind css',linkDep:'https://food-blog-azure.vercel.app/',
+                     linkGit:'https://github.com/Ainasebastien56/Food-Blog',
+                      description:'A fully responsive and interactive food blog built with Angular and Tailwind CSS, designed to showcase my front-end development skills and project experience.'
+                    },
                     {src:image1, alt:'angular', title:'MyPortfolio', bg:'bg-red-500',
                     tech:'VueJs + Tailwind css',linkDep:'https://aina-sebastien.vercel.app/#portfolio',
                      linkGit:'https://github.com/Ainasebastien56/Portfolio.git',

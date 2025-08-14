@@ -34,7 +34,6 @@ import git from  '@/assets/images/git.svg';
 import github from '@/assets/images/github.svg';
 import javascript from '@/assets/svg/javascript.svg';
 import nodejs from '@/assets/svg/nodejs.svg';
-import react from '@/assets/svg/react-js.svg';
 import vuejs from '@/assets/svg/vuejs.svg';
 import typescript from '@/assets/svg/typescript.svg';
 import tailwind from '@/assets/svg/tailwind.svg';
@@ -52,7 +51,6 @@ import spring from '@/assets/svg/spring-boot.svg'
             technologies:[
             {id:1, src:angular, name:'Angular'},
             {id:2, src:javascript, name:'JavaScript'},
-            {id:3, src:react, name:'React'},
             {id:4, src:vuejs, name:'Vue.js'},
             {id:5, src:typescript, name:'TypeScript'},
             {id:6, src:tailwind, name:'Tailwindcss'},

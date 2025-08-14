@@ -30,15 +30,16 @@
                     <font-awesome-icon icon="server" class="bg-yellow-300 text-white p-2" />
                 </div>
                 <div>
-                    <h3 class="font-semibold text-lg">Backend Development</h3>
+                    <h3 class="font-semibold text-lg">UI/UX & Interactive Components</h3>
                     <p class="text-sm">
-                        I develop business logic and manage databases
-                        to build robust web applications. My skills include creating APIs and
-                        server management
+                        I implement interactive components and animations 
+                        to enhance user engagement and usability.
+                        Technologies: Angular Animations, CSS transitions, 
+                        JavaScript/TypeScript
                     </p>
                     <p class="mt-5">
                     <span class="font-semibold ">Technologies:</span>
-                    Node.js, Express, Spring Boot, Mysql, Oracle Database
+                     Angular Animations, CSS transitions, JavaScript/TypeScript
                     </p>
                 </div>
         </div>
@@ -67,15 +68,15 @@
                 <font-awesome-icon icon="cloud" class="bg-red-500 text-white p-2" />
             </div>
             <div>
-                <h3 class="font-semibold text-lg">RESTful APIs</h3>
+                <h3 class="font-semibold text-lg">API Integration (Front-End)</h3>
                 <p class="text-sm">
-                    I design efficient RESTful APIs to enable seamless
-                    communication between different parts of your applications.
-                    My APIs are secure, scalable, and well documented.
+                    I integrate and consume RESTful APIs efficiently
+                     to fetch and display data on the client-side, 
+                     ensuring smooth interactions and responsive applications.
                 </p>
                 <p class="mt-5">
                     <span class="font-semibold">Standars:</span>
-                    CRUD operations, JWT for authentification, error handling.
+                     CRUD operations, JSON handling, error management
                 </p>
             </div>
         </div>

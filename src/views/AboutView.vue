@@ -12,33 +12,19 @@
 
           <div class="section w-full h-full md:w-3/5 text-white flex flex-col px-5  py-10 md:py-0">
               <div class="navigation text-md md:text-lg mb-10 w-full  justify-center md:justify-start  items-center space-x-5 md:space-x-20 border-b-2 border-white  pb-5 ">
-                  <a @click="setActive('story')" :class="isActive ==='story'?'text-white':''" class="text-gray-600 transition-all transition-500 ease-in-out border-0">MY STORY</a>
-                  <a @click="setActive('experience')" :class="isActive ==='experience'?'text-white':''" class="text-gray-600 transition-all transition-500 ease-in-out border-0">EXPERIENCE</a>
-                  <a @click="setActive('education')" :class="isActive ==='education'?'text-white':''" class="text-gray-600 transition-all transition-500 ease-in-out border-0">EDUCATION</a>
+                  <a @click="setActive('story')" :class="isActive ==='story'?'text-white':''" class="text-gray-400 transition-all transition-500 ease-in-out border-0">MY STORY</a>
+                  <a @click="setActive('experience')" :class="isActive ==='experience'?'text-white':''" class="text-gray-400 transition-all transition-500 ease-in-out border-0">EXPERIENCE</a>
+                  <a @click="setActive('education')" :class="isActive ==='education'?'text-white':''" class="text-gray-400 transition-all transition-500 ease-in-out border-0">EDUCATION</a>
               </div>
  
               <div class="text-justify text-gray-200 ">
                   <div class="leading-normal text-md md:text-lg" v-show="isActive === 'story'" :class="isActive?'section':''">
                     <p class="mb-5">I'm <span class="font-bold">Sébastien,</span>
-                      a passionate web developer with a deep love for creating dynamic and engaging
-                      applications. My journey in technology began with fascination for coding, and i have since
-                      specialized in JavaScript frameworks like <span class=" font-semibold italic">Angular, React and Vue.js</span>
-                    </p>
-                    <p class="mb-5">
-                      While I consider
-                      myself an expert in front-end development, i am also adaptable and capable of working
-                      in a Full Stack environment.
-                    </p>
-
-                    <p class="mb-5">
-                      My philosophy is simple: no matter the obstacles i face, i always rise to the challenge
-                      and give my all in everything i do. This resilience drives me to continously grow as a developer.
-                      I focus on creating responsive applications with appealing designs that offer seamless user experiences.
-                    </p>
-                     
-                    <p class="mb-5">
-                      When i'm not coding, you can find me diving into the latest tech trends. I believe that learning is a lifelong
-                      journey, and i am excided about what the future holds.
+                      a Front-End Developer specializing in Angular and Vue.js, 
+                      focused on building dynamic, responsive, and user-friendly web applications.
+                      I have experience in Full-Stack development from my internship, which helps 
+                      me collaborate effectively with backend teams. I’m passionate about creating
+                       interfaces that are both visually appealing and optimized for all devices.
                     </p>
                   </div>
 
@@ -46,23 +32,22 @@
                     <h2 class="text-lg md:text-xl font-semibold leading-loose">FullStack Developer (Internship)</h2>
                     <h3 class="mb-5 text-md">CNaPS | Mai - August 2023  </h3>
                     <ul class="leading-loose">
-                      <li> <font-awesome-icon class="mr-5" icon="check-circle"/>Development of a web application for managing National Health Coverage.</li>
-                      <li> <font-awesome-icon class="mr-5" icon="check-circle"/>Development of the front-end and back-end using Angular and Spring Boot.</li>
-                      <li> <font-awesome-icon class="mr-5" icon="check-circle"/>Creating RESTful services.</li>
-                      <li> <font-awesome-icon class="mr-5" icon="check-circle"/>Implementation of business logic.</li>
-                      <li> <font-awesome-icon class="mr-5" icon="check-circle"/>Storage and management of data using Oracle Database.</li>
+                      <li> <font-awesome-icon class="mr-5" icon="check-circle"/>Developed a web app for National Health Coverage management.</li>
+                      <li> <font-awesome-icon class="mr-5" icon="check-circle"/>Front-end with Angular (responsive design) & back-end with Spring Boot.</li>
+                      <li> <font-awesome-icon class="mr-5" icon="check-circle"/>Created RESTful services and implemented business logic.</li>
+                      <li> <font-awesome-icon class="mr-5" icon="check-circle"/>Managed data using Oracle Database.</li>
                     </ul>
                   </div>
 
                   <div v-show="isActive === 'education'" :class="isActive?'section':''">
                     <div class="mb-10">
-                      <h2 class="text-lg md:text-xl font-semibold" >• Currently pursuing a Master's degree (Year 2) in Electronics, Computer Systems, and Artifical Intelligence</h2>
-                      <h3 class="text-md"> Institut Supérieur Polytechnique de Madagascar (I.S.P.M) | 2023 - 2024</h3>
+                      <h2 class="text-lg md:text-xl font-semibold" >• MSc in Artificial Intelligence with Machine Learning</h2>
+                      <h3 class="text-md"> University of Technology, Mauritius | Avril 2025 - Present</h3>
                     </div>
 
                     <div >
-                      <h2 class="text-lg md:text-xl font-semibold" >• Bachelor's degree in Electronics, Computer Systems, and Artifical Intelligence</h2>
-                      <h3 class=""> Institut Supérieur Polytechnique de Madagascar (I.S.P.M) | 2022 - 2023</h3>
+                      <h2 class="text-lg md:text-xl font-semibold" >• Bachelor's in Electronics, Computer Systems, and AI</h2>
+                      <h3 class=""> Institut Supérieur Polytechnique de Madagascar (I.S.P.M) | 2019 - 2023</h3>
                     </div>           
                   </div>
               </div>
